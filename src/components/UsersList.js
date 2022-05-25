@@ -11,11 +11,10 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                         <p>{user.email}</p>
                         <p>{user.birthday}</p>
 
-                        <button onClick={() => deleteUser(user.id)} className="btn btn-danger m-1">Delete</button>
-                        
-                        <button onClick={() => selectUser(user)}
-                        className="btn btn-warning m-1">Editar</button>
+                        <button onClick={() => deleteUser(user.id)} className="btn btn-danger m-1"><i class="fa-solid fa-trash-can"></i></button>
 
+                        <button onClick={() => selectUser(user)}
+                        className="btn btn-warning m-1"><i class="fa-solid fa-pen-to-square"></i></button>
 
                     </li>
                 ))

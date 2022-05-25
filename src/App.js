@@ -2,7 +2,8 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import './App.css';
 import UsersList from './components/UsersList';
-import UsersForm from './components/UsersForm'
+import UsersForm from './components/UsersForm';
+
 
 function App() {
 
@@ -48,10 +49,10 @@ function App() {
     <div className="App container">
       <div className="header d-flex justify-content-between" style={{ padding:'2rem'}}>
       <h1>Usuarios</h1>
-      <button className='btn btn-primary btn-sm' onClick={()=> setShowModal(true)}>Crear nuevo usuario</button>
+      <button className='btn btn-primary btn-sm' onClick={()=> setShowModal(true)}>Crear Nuevo Usuario</button>
 
       </div>
-      
+
       {showModal && 
       <UsersForm 
       addUsers={addUsers}
