@@ -9,7 +9,6 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                         <p>{user.first_name}</p>
                         <p>{user.last_name}</p>
                         <p>{user.email}</p>
-                        <p>{user.password}</p>
                         <p>{user.birthday}</p>
 
                         <button onClick={() => selectUser(user)}
