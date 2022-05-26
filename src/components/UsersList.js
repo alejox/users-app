@@ -2,7 +2,9 @@ import React from 'react';
 
 const UsersList = ({users, selectUser, deleteUser}) => {
     return (
-        <ul className="list-group">
+        <div className="container">
+
+        <ul className="list-group row">
             {
                 users.map(user => (
                     <li key={user.id} className={'list-group-item'}>
@@ -20,6 +22,8 @@ const UsersList = ({users, selectUser, deleteUser}) => {
                 ))
             }
         </ul>
+
+        </div>
     );
 };
 
